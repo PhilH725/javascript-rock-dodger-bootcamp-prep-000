@@ -89,9 +89,8 @@ function createRock(x) {
        rock.style.top = `${top+=4}px`
        window.requestAnimationFrame(moveRock);
      } else if (top >= 380) {
-       console.log(ROCKS)
-       GAME.removeChild(rock);
-       ROCKS.shift();
+       //console.log(ROCKS)
+       rock.remove()
      }
 
     /**

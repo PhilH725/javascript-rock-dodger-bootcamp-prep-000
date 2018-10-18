@@ -92,6 +92,7 @@ function createRock(x) {
      } else {
        console.log(ROCKS)
        GAME.removeChild(rock)
+       ROCKS.shift()
      }
 
     /**

@@ -125,7 +125,7 @@ function endGame() {
   //while (ROCKS.length > 0) {
     //GAME.removeChild(ROCKS[0]);
     //ROCKS.shift();
-  }
+  //}
   /*for (let i = 0; i < ROCKS.length; i++) {
     GAME.removeChild(ROCKS[i])
   } */

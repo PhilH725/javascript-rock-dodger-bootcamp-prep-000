@@ -85,14 +85,14 @@ function createRock(x) {
      rock.style.top = `${top+=4}px`
      if (checkCollision(rock) === true) {
        endGame();
-     } 
-     if (top < 380) {
+     } else if (top < 380) {
        //rock.style.top = `${top+=4}px`
        window.requestAnimationFrame(moveRock);
      } else {
-       console.log(ROCKS)
-       GAME.removeChild(rock)
-       ROCKS.shift()
+       rock.remove()
+       //console.log(ROCKS)
+       //GAME.removeChild(rock)
+       //ROCKS.shift()
      }
 
     /**

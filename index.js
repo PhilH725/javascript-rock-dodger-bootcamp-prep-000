@@ -90,12 +90,8 @@ function createRock(x) {
        window.requestAnimationFrame(moveRock);
      } else if (top >= 380) {
        console.log(ROCKS)
-       if (ROCKS.length > 0) {
-         GAME.removeChild(rock);
-         ROCKS.shift() 
-       }
-       //GAME.removeChild(rock);
-       //ROCKS.shift();
+       GAME.removeChild(rock);
+       ROCKS.shift();
      }
 
     /**
@@ -126,7 +122,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval)
-  while (ROCKS.length > 0) {
+  while (ROCKS.length > -1) {
     GAME.removeChild(ROCKS[0]);
     ROCKS.shift();
   }

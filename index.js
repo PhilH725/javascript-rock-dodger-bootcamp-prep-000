@@ -90,9 +90,6 @@ function createRock(x) {
        window.requestAnimationFrame(moveRock);
      } else {
        rock.remove()
-       //console.log(ROCKS)
-       //GAME.removeChild(rock)
-       //ROCKS.shift()
      }
 
     /**
@@ -126,7 +123,6 @@ function endGame() {
   ROCKS.forEach( function(rock) {
     rock.remove()
   })
-  //ROCKS.forEach(function(rock) { rock.remove() })
   /*for (let i = 0; i < ROCKS.length; i++) {
     GAME.removeChild(ROCKS[i])
   } */

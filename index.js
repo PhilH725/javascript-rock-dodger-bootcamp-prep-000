@@ -91,7 +91,7 @@ function createRock(x) {
        window.requestAnimationFrame(moveRock);
      } else {
        console.log(ROCKS)
-       rock.remove()
+       GAME.removeChild(rock)
      }
 
     /**
